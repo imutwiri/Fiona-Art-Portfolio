@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiona Nkatha Kimathi | Theatre & Film Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            theatreRed: '#7b1e1e',
+            theatreGold: '#d4af37'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Curtain Effect Background */
+    .curtain-bg {
+      background: radial-gradient(circle at top left, #8b0000, #5a0f0f);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        rgba(139, 0, 0, 0.7) 0px,
+        rgba(90, 15, 15, 0.8) 40px,
+        rgba(139, 0, 0, 0.7) 80px
+      );
+    }
+    .curtain-overlay {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans">
+
+  <!-- Navigation -->
+  <header class="fixed w-full bg-theatreRed bg-opacity-95 shadow-md z-50 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-bold text-theatreGold">Fiona Nkatha Kimathi</a>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="#home" class="hover:text-theatreGold transition">Home</a></li>
+          <li><a href="#about" class="hover:text-theatreGold transition">About</a></li>
+          <li><a href="#projects" class="hover:text-theatreGold transition">Productions</a></li>
+          <li><a href="#skills" class="hover:text-theatreGold transition">Skills</a></li>
+          <li><a href="#education" class="hover:text-theatreGold transition">Education</a></li>
+          <li><a href="#contact" class="hover:text-theatreGold transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center pt-20 relative curtain-bg text-white">
+  <div class="spotlight"></div>
+  <div class="curtain-overlay absolute inset-0"></div>
+  <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center relative z-10">
+    <div class="md:w-1/2 mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm <span class="text-theatreGold">Fiona Nkatha Kimathi</span></h1>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6">Theatre & Film Productions</h2>
+      <p class="text-lg mb-6 text-gray-200 max-w-lg">
+        Bringing stories to life on stage and screen.  
+        Experienced as a <b>Costume Manager</b>, <b>Assistant Stage Manager</b>, and <b>Stage Manager</b>,  
+        blending creativity with organization to deliver unforgettable productions.
+      </p>
+      <p class="text-lg mb-8 text-gray-200 max-w-lg">
+        🎓 Currently pursuing a <b>Bachelor of Education in Special Needs Education (BED SNE)</b>  
+        at <b>Kenyatta University</b>, where I am in my <b>2nd year</b>.  
+        I am passionate about inclusive learning and empowering every student’s potential.
+      </p>
+      <div class="flex space-x-4">
+        <a href="#projects" class="bg-theatreGold text-theatreRed font-semibold px-6 py-3 rounded-full hover:opacity-90">View My Work</a>
+        <a href="#contact" class="border-2 border-theatreGold text-theatreGold px-6 py-3 rounded-full hover:bg-theatreGold hover:text-theatreRed">Contact Me</a>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img src="Images/fiona.jpg" alt="Fiona Kimathi" class="rounded-full w-64 h-64 object-cover border-8 border-theatreGold shadow-xl">
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-16 text-theatreRed"><span class="border-b-4 border-theatreGold pb-2">About Me</span></h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 mb-10 flex justify-center">
+          <img src="Images/theatre.jpg" alt="Stage work" class="rounded-lg shadow-lg w-full max-w-md border-4 border-theatreGold">
+        </div>
+        <div class="md:w-2/3 md:pl-12">
+          <p class="text-gray-700 mb-6">
+            I am a passionate theatre and film professional with a focus on costume design, stage coordination, and production management.  
+            My mission is to ensure every performance flows seamlessly, from the backstage hustle to the spotlight moments.
+          </p>
+          <p class="text-gray-700">
+            With experience in both theatre and film, I thrive in fast-paced creative environments that demand organization, artistry, and collaboration.  
+            Each production I work on is more than a show — it’s a story brought to life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productions Section -->
+  <section id="projects" class="py-20 relative curtain-bg text-white">
+    <div class="curtain-overlay absolute inset-0"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-3xl font-bold text-center mb-4 text-theatreGold"><span class="pb-2">Featured Productions</span></h2>
+      <p class="text-center text-gray-200 mb-16 max-w-2xl mx-auto">Highlights from my journey as a Costume Manager, Assistant Stage Manager, and Stage Manager.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Production 1 -->
+        <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-md border-2 border-theatreGold">
+          <img src="Images/play1.jpg" alt="Production 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-theatreRed mb-2">Kifo Kisimani</h3>
+            <p>Assistant Stage Manager — Coordinated backstage activities and ensured smooth transitions.</p>
+          </div>
+        </div>
+
+        <!-- Production 2 -->
+        <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-md border-2 border-theatreGold">
+          <img src="Images/play2.jpg" alt="Production 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-theatreRed mb-2">Betrayal in the City</h3>
+            <p>Costume Manager — Designed and curated costumes to reflect the socio-political themes of the play.</p>
+          </div>
+        </div>
+
+        <!-- Production 3 -->
+        <div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-md border-2 border-theatreGold">
+          <img src="Images/film1.jpg" alt="Production 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-theatreRed mb-2">The Silent Echo (Short Film)</h3>
+            <p>Stage Manager — Coordinated cast and crew for a flawless indie film shoot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-4 text-theatreRed"><span class="border-b-4 border-theatreGold pb-2">My Skills</span></h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
+        <div class="p-6 bg-gray-100 rounded-lg text-center border-t-4 border-theatreGold">
+          <i class="fas fa-masks-theater text-theatreRed text-3xl mb-3"></i>
+          <h4 class="font-semibold">Costume Design</h4>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg text-center border-t-4 border-theatreGold">
+          <i class="fas fa-clipboard-list text-theatreRed text-3xl mb-3"></i>
+          <h4 class="font-semibold">Stage Management</h4>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg text-center border-t-4 border-theatreGold">
+          <i class="fas fa-user-clock text-theatreRed text-3xl mb-3"></i>
+          <h4 class="font-semibold">Time Coordination</h4>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg text-center border-t-4 border-theatreGold">
+          <i class="fas fa-film text-theatreRed text-3xl mb-3"></i>
+          <h4 class="font-semibold">Film Production</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎓 Education Section -->
+  <section id="education" class="py-20 bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-4 text-theatreRed"><span class="border-b-4 border-theatreGold pb-2">Education</span></h2>
+      <div class="max-w-3xl mx-auto mt-12">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md border-l-4 border-theatreGold p-6 mb-6">
+          <h3 class="text-xl font-bold text-theatreRed mb-2">Bachelor of Education in Special Needs Education (BED SNE)</h3>
+          <p class="text-gray-700 dark:text-gray-300">Kenyatta University — Currently in 2nd Year</p>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">Pursuing a strong foundation in education and inclusive learning, with a passion for creating supportive environments for learners with special needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-4 text-theatreRed"><span class="border-b-4 border-theatreGold pb-2">Get In Touch</span></h2>
+      <p class="text-center text-gray-600 mb-16">For collaborations, productions, or costume work, reach out below.</p>
+      <div class="max-w-2xl mx-auto">
+        <form class="bg-white p-8 rounded-lg shadow-md border border-theatreGold">
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-theatreRed">Name</label>
+            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md">
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-theatreRed">Email</label>
+            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md">
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-theatreRed">Message</label>
+            <textarea id="message" rows="5" class="w-full px-4 py-2 border rounded-md"></textarea>
+          </div>
+          <button type="submit" class="bg-theatreRed hover:bg-theatreGold hover:text-theatreRed text-white px-6 py-3 rounded-full w-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative curtain-bg text-white py-8">
+    <div class="curtain-overlay absolute inset-0"></div>
+    <div class="container mx-auto text-center relative z-10">
+      <h3 class="text-xl font-bold text-theatreGold">Fiona Nkatha Kimathi</h3>
+      <p class="text-gray-200">Costume Manager | Stage Manager | Theatre & Film Productions</p>
+      <p class="mt-4 text-sm text-theatreGold">© 2025 Fiona Nkatha Kimathi | All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
