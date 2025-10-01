@@ -154,3 +154,18 @@
     bottom: 32px;
   }
 }
+
+/* Active Nav Link Underline */
+.nav-link.active {
+  position: relative;
+}
+        
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #d4af37;
+}
